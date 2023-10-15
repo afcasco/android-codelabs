@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Codelab 4.3b</string>
+    <string name="tap_to_show_alert_text">Hello World! Tap to test the alert:</string>
+    <string name="alert_button">ALERT</string>
+</resources>
