@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:text="http://www.google.com"
+            android:ems="10"
+            android:id="@+id/website_edittext"
+            android:layout_marginTop="24dp"
+            android:minHeight="48dp" />
+
+    <Button
+            android:text="Open Website"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/open_website_button"
+            android:layout_marginBottom="24dp"
+             />
+
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:text="Golden Gate Bridge"
+            android:ems="10"
+            android:id="@+id/edittext_loc"
+            android:minHeight="48dp" />
+
+    <Button
+            android:text="Open Location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/open_loc_button"
+            android:layout_marginBottom="24dp"/>
+
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:text="Share this text"
+            android:ems="10"
+            android:id="@+id/edittext_share"
+            android:minHeight="48dp" />
+
+    <Button
+            android:text="Share This Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/share_text_button" />
+
+
+</LinearLayout>

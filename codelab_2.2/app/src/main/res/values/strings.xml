@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Codelab 2.2</string>
+    <string name="activity2_name">Second Activity</string>
+    <string name="editText_main">Enter Your Message Here</string>
+    <string name="send_button_text">SEND</string>
+    <string name="text_header_reply">Reply Received</string>
+</resources>

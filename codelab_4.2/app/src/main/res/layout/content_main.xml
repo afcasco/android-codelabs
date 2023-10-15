@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+    <TextView
+            android:text="@string/intro_text"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/textIntro" />
+
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/donut_circle"
+            android:id="@+id/donut"
+            app:layout_constraintTop_toBottomOf="@+id/textIntro"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="24dp"
+            android:contentDescription="@string/donuts" />
+
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/icecream_circle"
+            android:id="@+id/ice_cream"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/donut"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="24dp"
+            android:contentDescription="@string/ice_cream_sandwiches"/>
+
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/froyo_circle"
+            android:id="@+id/froyo"
+            app:layout_constraintTop_toBottomOf="@+id/ice_cream"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="24dp"
+            android:contentDescription="@string/froyo"/>
+
+    <TextView
+            android:text="@string/donuts"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/donut_description"
+            app:layout_constraintStart_toEndOf="@+id/donut"
+            app:layout_constraintTop_toTopOf="@+id/donut"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+            android:text="@string/ice_cream_sandwiches"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/ice_cream_description"
+            app:layout_constraintStart_toEndOf="@+id/ice_cream"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/ice_cream"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:minHeight="48dp" />
+
+    <TextView
+            android:text="@string/froyo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/froyo_description"
+            app:layout_constraintStart_toEndOf="@+id/froyo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/froyo"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:minHeight="48dp"
+            />
+</androidx.constraintlayout.widget.ConstraintLayout>
