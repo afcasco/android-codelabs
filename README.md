@@ -1,6 +1,6 @@
 # android-codelabs
 
-Old android codelabs rewritten in kotlin (no jetpack compose version)
+Old android codelabs rewritten in kotlin (using views, not jetpack compose)
 
 When there's more than one project in a codelab, the subsequent projects are named with a letter (a-z) next to the code lab number.
 
