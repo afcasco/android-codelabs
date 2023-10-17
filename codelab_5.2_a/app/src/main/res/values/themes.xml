@@ -1,0 +1,13 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.MaterialMe" parent="Theme.Material3.DayNight">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:colorPrimary">#009234</item>
+        <item name="android:colorPrimaryDark">#375539</item>
+        <item name="android:colorSecondary">#ff7200</item>
+        <item name="android:colorAccent">#abd1b1</item>
+    </style>
+
+    <style name="Theme.MaterialMe" parent="Base.Theme.MaterialMe" />
+</resources>

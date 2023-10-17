@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">Material Me!</string>
+    <string name="title_placeholder">Title</string>
+    <string name="news_placeholder">News</string>
+    <string name="sports_info_placeholder">Here is some news</string>
+    <string name="lorem_ipsum_4_paragraphs">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar turpis nec odio egestas dictum. Vestibulum in enim et est consequat gravida. In facilisis nibh nisl, vitae congue massa convallis nec. Vestibulum convallis, mauris ac blandit eleifend, elit eros tristique metus, et gravida metus lacus at lorem. In maximus tellus purus, ac imperdiet mi euismod at. Quisque sit amet elementum mi. Sed leo velit, mattis sit amet lectus malesuada, tincidunt maximus diam. Mauris dapibus massa at justo laoreet fringilla. Integer tellus libero, dictum non sapien sit amet, feugiat dapibus ex. Integer tempor arcu in venenatis consequat. Maecenas mauris enim, tincidunt nec nibh et, tempor bibendum diam. Phasellus pellentesque lacus eu tellus dignissim aliquet. Proin consequat ut nunc ac rhoncus. Vestibulum suscipit imperdiet luctus. Etiam nunc est, lobortis quis est ac, hendrerit sodales enim. Aliquam blandit, orci ac sollicitudin egestas, massa urna euismod metus, vitae rutrum ex magna non sem. Nullam ultrices pretium congue. In pharetra est tortor, eget faucibus neque pretium et. Phasellus pellentesque convallis odio, eget viverra elit sollicitudin vel. Quisque rhoncus luctus libero, in euismod leo. Vivamus urna metus, lobortis vestibulum elit consequat, accumsan luctus ante. Praesent elementum viverra dolor et tempus. Pellentesque finibus accumsan nunc vel fringilla. Sed maximus turpis elit, ac varius augue eleifend a. Nullam nec magna nisi. Ut quam quam, mattis venenatis blandit at, ullamcorper at justo. Quisque mollis, leo a pulvinar rhoncus, justo lacus ultrices felis, ac aliquet risus nunc et massa. Cras sit amet tortor feugiat, euismod odio aliquam, tempor felis. Praesent blandit lectus vel diam commodo, id aliquam urna commodo. Proin tortor lectus, efficitur non lacinia a, egestas ut purus. Integer sagittis nisi finibus leo posuere, mattis ultrices tellus elementum. Donec ligula urna, volutpat scelerisque sem nec, vestibulum tempus dui. Praesent sit amet mattis justo, in porta turpis. Maecenas sagittis pulvinar odio et egestas. Praesent iaculis accumsan urna, id rutrum tellus pellentesque eget. Nam quam orci, sodales non vehicula ac, accumsan porta ligula. Integer at molestie magna. Proin luctus venenatis nulla vitae posuere. Suspendisse non mi venenatis, cursus nisi quis, scelerisque tellus. Nunc finibus purus nec cursus convallis. In a neque ac felis dapibus pulvinar sit amet non ipsum. Etiam pulvinar leo sit amet semper scelerisque. Mauris efficitur euismod odio, convallis suscipit lectus gravida a. Curabitur quis nulla eget erat tempor rutrum quis non ante. Praesent eu sem sed odio dapibus bibendum et eget erat. Quisque sed lectus et lectus suscipit commodo. Cras ante urna, aliquet sit amet consequat eu, vestibulum vel neque. Ut iaculis libero et sem posuere accumsan eu et elit. Sed felis eros, ultrices vel sagittis vitae, tempus molestie nulla. Praesent sed lorem leo.</string>
+    <string name="floating_button_content_description">activity main floating button</string>
+
+    <string-array name="sports_titles">
+        <item>Baseball</item>
+        <item>Badminton</item>
+        <item>Basketball</item>
+        <item>Bowling</item>
+        <item>Cycling</item>
+        <item>Golf</item>
+        <item>Running</item>
+        <item>Soccer</item>
+        <item>Swimming</item>
+        <item>Table Tennis</item>
+        <item>Tennis</item>
+    </string-array>
+
+    <string-array name="sports_info">
+        <item>Here is some Baseball news!</item>
+        <item>Here is some Badminton news!</item>
+        <item>Here is some Basketball news!</item>
+        <item>Here is some Bowling news!</item>
+        <item>Here is some Cycling news!</item>
+        <item>Here is some Golf news!</item>
+        <item>Here is some Running news!</item>
+        <item>Here is some Soccer news!</item>
+        <item>Here is some Swimming news!</item>
+        <item>Here is some Table Tennis news!</item>
+        <item>Here is some Tennis news!</item>
+    </string-array>
+
+    <array name="sports_images">
+        <item>@drawable/img_baseball</item>
+        <item>@drawable/img_badminton</item>
+        <item>@drawable/img_basketball</item>
+        <item>@drawable/img_bowling</item>
+        <item>@drawable/img_cycling</item>
+        <item>@drawable/img_golf</item>
+        <item>@drawable/img_running</item>
+        <item>@drawable/img_soccer</item>
+        <item>@drawable/img_swimming</item>
+        <item>@drawable/img_tabletennis</item>
+        <item>@drawable/img_tennis</item>
+    </array>
+
+
+</resources>

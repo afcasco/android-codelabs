@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+    <RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context=".DetailActivity">
+
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/sportsImage_detail"
+                android:adjustViewBounds="true"
+                android:contentDescription="sport_image" />
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/title_detail"
+                android:text="@string/title_placeholder"
+                android:padding="16dp"
+                android:layout_alignBottom="@id/sportsImage_detail"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark"
+                style="@style/TextAppearance.AppCompat.Headline" />
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/newsTitle_detail"
+                android:text="@string/news_placeholder"
+                android:padding="16dp"
+                android:layout_below="@id/sportsImage_detail"
+                android:textColor="?android:textColorSecondary"
+                style="@style/TextAppearance.AppCompat.Subhead" />
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/subTitle_detail"
+                android:text="@string/lorem_ipsum_4_paragraphs"
+                android:padding="16dp"
+                android:layout_below="@+id/newsTitle_detail"
+                style="@style/TextAppearance.AppCompat.Subhead" />
+
+    </RelativeLayout>
+
+
+</ScrollView>
