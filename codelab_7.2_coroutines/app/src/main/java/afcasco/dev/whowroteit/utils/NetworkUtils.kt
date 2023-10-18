@@ -18,7 +18,7 @@ class NetworkUtils {
 
     companion object {
 
-        // Fetch API response for String queryString
+        // Retorna la resposta de la API en format String?
         fun getBookInfo(queryString: String): String? {
             val urlConnection: HttpURLConnection?
             val bookJSONString: String?
@@ -45,7 +45,7 @@ class NetworkUtils {
 
         }
 
-        // Return state of network availability
+        // Retorna un boolea que indica la disponibilitat de la xarxa
         @RequiresApi(Build.VERSION_CODES.M)
         fun isInternetAvailable(context: Context) =
             (context.getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager).run {
