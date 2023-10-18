@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">WhoWroteIt</string>
+    <string name="instructions">Enter a book name to find out who wrote the book. </string>
+    <string name="button_text">Search Books</string>
+    <string name="input_hint">Book Title</string>
+    <string name="loading_result">Fetching results...</string>
+    <string name="loading">Loading...</string>
+    <string name="no_search_term">No search term</string>
+    <string name="no_network">No network</string>
+
+</resources>
