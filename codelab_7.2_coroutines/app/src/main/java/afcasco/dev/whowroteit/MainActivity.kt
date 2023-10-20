@@ -12,15 +12,15 @@ import android.widget.EditText
 import android.widget.TextView
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
-import kotlinx.coroutines.CoroutineScope
+import androidx.lifecycle.lifecycleScope
 import kotlinx.coroutines.Deferred
 import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.MainScope
 import kotlinx.coroutines.async
+import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 
-class MainActivity : AppCompatActivity(), CoroutineScope by MainScope() {
+class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
     private lateinit var button: Button
@@ -43,14 +43,12 @@ class MainActivity : AppCompatActivity(), CoroutineScope by MainScope() {
         setContentView(binding.root)
 
         button.setOnClickListener {
-            launch {
+            lifecycleScope.launch {
                 val jsonResponse = searchBooks().await()
                 jsonResponse?.let { println(jsonResponse) }
                 jsonResponse?.let { JsonUtils.processJsonResponse(it, mTitleText, mAuthorText) }
             }
         }
-
-
     }
 
 
@@ -65,7 +63,9 @@ class MainActivity : AppCompatActivity(), CoroutineScope by MainScope() {
 
             var jsonResponse: String? = null
 
-            if (NetworkUtils.isInternetAvailable(applicationContext) && queryString.isNotEmpty()) {
+            val internetIsActive = NetworkUtils.isInternetAvailable(applicationContext)
+
+            if (internetIsActive && queryString.isNotEmpty()) {
                 // Canviem l'scope per modificar elements de la UI
                 withContext(Dispatchers.Main) {
                     mAuthorText.text = ""
@@ -76,6 +76,7 @@ class MainActivity : AppCompatActivity(), CoroutineScope by MainScope() {
 
             } else {
                 // Canviem el scope a Main per canviar els elements de la UI
+                // I indicar si no hi ha internet o el input estava buit
                 withContext(Dispatchers.Main) {
                     mAuthorText.text = ""
                     if (queryString.isEmpty()) {
@@ -99,6 +100,4 @@ class MainActivity : AppCompatActivity(), CoroutineScope by MainScope() {
             InputMethodManager.HIDE_NOT_ALWAYS
         )
     }
-
-
 }
